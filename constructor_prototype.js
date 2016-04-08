@@ -22,8 +22,23 @@ cat.meow = function() {
 };
 
 // console.log(cat.cuteStatement());
-console.log(cat.meow());
+// console.log(cat.meow());
 var cat2 = new Cat("hi", "bye");
 
 var boundMeow = cat.__proto__.meow.bind(cat2);
-console.log(boundMeow());
+// console.log(boundMeow());
+
+var hello = [1, 2, 3];
+
+var obj = {
+  hello: function() {
+    return "Puuurrrrrr";
+  },
+  bye: "Bye"
+};
+
+obj[[1, 2, 3]] = "Hello";
+obj.bye = "Bye Bye ";
+obj["bye"] += "Bye bye bye";
+
+console.log(obj["bye"]);

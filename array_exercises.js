@@ -20,6 +20,7 @@ function myUniq(array){
   return uniq;
 }
 
+console.log(myUniq([1, 1, 3, 3, 6, 6]));
 console.log([1, 1, 2, 2, 3, 4, 5, 5].myUniq());
 
 function twoSum(array){
